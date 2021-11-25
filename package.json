@@ -1,0 +1,19 @@
+{
+    "name": "parcel-test",
+    "version": "1.0.0",
+    "description": "",
+    "source": "index.html",
+    "scripts": {
+        "watch": "npx parcel src/index.html",
+        "production": "parcel build src/index.html"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.4.0",
+        "parcel": "^2.0.1",
+        "postcss": "^8.4.1",
+        "postcss-import": "^14.0.2",
+        "tailwindcss": "^2.2.19"
+    }
+}
