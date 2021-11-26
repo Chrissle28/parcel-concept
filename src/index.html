@@ -1,13 +1,27 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Parcel Test</title>
-    <meta name="title" content="Test">
-    <link rel="stylesheet" href="app.css" />
-    <script type="module" src="index.js"></script>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <p class="text-lg container text-green-400">Lorem Ipsum</p>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Parcel Test</title>
+        <meta name="title" content="Test" />
+        <link rel="stylesheet" href="app.css" />
+    </head>
+    <body>
+        <div class="container py-32">
+            <h1>Hello, World!</h1>
+            <p class="text-lg text-green-400">Lorem Ipsum</p>
+            <img
+                src="./assets/ocean.jpg"
+                srcset="
+                    ./assets/ocean.jpg?as=webp&width=20     20w,
+                    ./assets/ocean.jpg?as=webp&width=200   200w,
+                    ./assets/ocean.jpg?as=webp&width=400   400w,
+                    ./assets/ocean.jpg?as=webp&width=800   800w,
+                    ./assets/ocean.jpg?as=webp&width=1000 1000w
+                "
+                sizes="(max-width: 767px) 200px, (max-width: 1023px) 400px, (max-width: 1279px) 800px, (max-width: 5000px) 1000px"
+                loading="lazy"
+                class="w-full"
+            />
+        </div>
+    </body>
 </html>
