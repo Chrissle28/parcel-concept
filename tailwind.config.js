@@ -1,11 +1,17 @@
 module.exports = {
-    purge: ['./src/index.html'],
-    darkMode: false, // or 'media' or 'class'
+    content: ['./src/index.html'],
     theme: {
         container: {
             center: true,
         },
-        extend: {},
+        fontFamily: {
+            inter: ['inter'],
+        },
+        extend: {
+            backgroundSize: {
+                '300%': '300%',
+            },
+        },
     },
     variants: {
         extend: {},

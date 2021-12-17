@@ -12,16 +12,36 @@
             <img
                 src="./assets/ocean.jpg"
                 srcset="
-                    ./assets/ocean.jpg?as=webp&width=20     20w,
-                    ./assets/ocean.jpg?as=webp&width=200   200w,
                     ./assets/ocean.jpg?as=webp&width=400   400w,
                     ./assets/ocean.jpg?as=webp&width=800   800w,
                     ./assets/ocean.jpg?as=webp&width=1000 1000w
                 "
                 sizes="(max-width: 767px) 200px, (max-width: 1023px) 400px, (max-width: 1279px) 800px, (max-width: 5000px) 1000px"
                 loading="lazy"
-                class="w-full"
+                class="w-full mb-20"
             />
+            <button
+                class="
+                    px-4
+                    py-3
+                    text-sm text-white
+                    transition-all
+                    duration-200
+                    rounded-full
+                    shadow-lg
+                    bg-gradient-to-tr
+                    from-indigo-700
+                    via-indigo-500
+                    to-indigo-300
+                    bg-300% bg-left-bottom
+                    hover:bg-right-top
+                    will-change-auto
+                    focus:ring-4 focus:ring-indigo-200 focus:outline-none
+                    shadow-indigo-200
+                "
+            >
+                Weiter
+            </button>
         </div>
     </body>
 </html>
