@@ -8,8 +8,11 @@
     <body>
         <div class="container py-32">
             <h1>Hello, World!</h1>
-            <p class="text-lg text-green-400">Lorem Ipsum</p>
-            <img srcset="/ocean.56f8f6f0.jpeg   400w,/ocean.3f2c3a38.jpeg   800w,/ocean.0cd9b45c.jpeg 1000w" sizes="(max-width: 767px) 200px, (max-width: 1023px) 400px, (max-width: 1279px) 800px, (max-width: 5000px) 1000px" src="/ocean.19a9847f.jpg" loading="lazy" class="mb-20">
+            <p class="text-lg text-emerald-400">Lorem Ipsum</p>
+            <picture>
+                <source srcset="/ocean.6cd7d57b.webp   400w,/ocean.f5f84556.webp   800w,/ocean.38733ee2.webp 1000w" sizes="(max-width: 767px) 200px, (max-width: 1023px) 400px, (max-width: 1279px) 800px, (max-width: 5000px) 1000px" type="image/webp">
+                <img src="/ocean.19a9847f.jpg" class="w-full mb-20" alt="Ocean">
+            </picture>
             <button class="
                     px-4
                     py-3
